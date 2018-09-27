@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController, PresenterDelegate {
+class ComicsViewController: UIViewController, PresenterDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     var movies = [Comics]()
     @IBOutlet weak var loading: UIActivityIndicatorView!
@@ -21,13 +21,13 @@ class MoviesViewController: UIViewController, PresenterDelegate {
        presenter?.getItems()
     }
     
-    var presenter: MoviesPresenter?
+    var presenter: ComicsPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-       self.presenter = MoviesPresenter(delegate: self)
+       self.presenter = ComicsPresenter(delegate: self)
         requestData()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,7 +40,7 @@ class MoviesViewController: UIViewController, PresenterDelegate {
     }
 
 }
-extension MoviesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension ComicsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        return movies.count
     }

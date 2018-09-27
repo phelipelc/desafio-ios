@@ -18,10 +18,12 @@
 		6E807D6B215C1C46000A62D6 /* CellDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E807D6A215C1C46000A62D6 /* CellDate.swift */; };
 		6E807D6D215C1C63000A62D6 /* CellOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E807D6C215C1C63000A62D6 /* CellOverview.swift */; };
 		6E807D71215C3AD1000A62D6 /* ComicsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E807D70215C3AD1000A62D6 /* ComicsDatabase.swift */; };
-		6EAB74B321580CEF0001DB51 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B221580CEF0001DB51 /* MoviesViewController.swift */; };
+		6E807D75215C9D0F000A62D6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E807D74215C9D0F000A62D6 /* FavoritesViewController.swift */; };
+		6E807D77215CAA7B000A62D6 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E807D76215CAA7B000A62D6 /* FavoritesTableViewCell.swift */; };
+		6EAB74B321580CEF0001DB51 /* ComicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B221580CEF0001DB51 /* ComicsViewController.swift */; };
 		6EAB74B521580D7B0001DB51 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B421580D7B0001DB51 /* Comics.swift */; };
-		6EAB74B721580F3D0001DB51 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B621580F3D0001DB51 /* MoviesPresenter.swift */; };
-		6EAB74B921580F480001DB51 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B821580F480001DB51 /* MoviesModel.swift */; };
+		6EAB74B721580F3D0001DB51 /* ComicsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B621580F3D0001DB51 /* ComicsPresenter.swift */; };
+		6EAB74B921580F480001DB51 /* ComicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74B821580F480001DB51 /* ComicsModel.swift */; };
 		6EAB74BD21582D970001DB51 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAB74BC21582D970001DB51 /* CollectionViewCell.swift */; };
 		6EF5B9D12158636900E34049 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5B9D02158636900E34049 /* Constants.swift */; };
 		8A554AAE3C829F320B042CA6 /* Pods_desafio_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E69A977DEF9C78246000F2 /* Pods_desafio_iosTests.framework */; };
@@ -56,10 +58,12 @@
 		6E807D6A215C1C46000A62D6 /* CellDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDate.swift; sourceTree = "<group>"; };
 		6E807D6C215C1C63000A62D6 /* CellOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOverview.swift; sourceTree = "<group>"; };
 		6E807D70215C3AD1000A62D6 /* ComicsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDatabase.swift; sourceTree = "<group>"; };
-		6EAB74B221580CEF0001DB51 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		6E807D74215C9D0F000A62D6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		6E807D76215CAA7B000A62D6 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		6EAB74B221580CEF0001DB51 /* ComicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsViewController.swift; sourceTree = "<group>"; };
 		6EAB74B421580D7B0001DB51 /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
-		6EAB74B621580F3D0001DB51 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
-		6EAB74B821580F480001DB51 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		6EAB74B621580F3D0001DB51 /* ComicsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsPresenter.swift; sourceTree = "<group>"; };
+		6EAB74B821580F480001DB51 /* ComicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsModel.swift; sourceTree = "<group>"; };
 		6EAB74BC21582D970001DB51 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6EF5B9D02158636900E34049 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B1E69A977DEF9C78246000F2 /* Pods_desafio_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +118,6 @@
 				6E807D6F215C3AAB000A62D6 /* DataBase */,
 				6EF5B9CF215862B900E34049 /* Util */,
 				6EAB74B121580CDD0001DB51 /* Scennes */,
-				6E1551B92157DA97007283CC /* AppDelegate.swift */,
 				6E1551BD2157DA97007283CC /* Main.storyboard */,
 				6E1551C02157DA99007283CC /* Assets.xcassets */,
 				6E1551C22157DA99007283CC /* LaunchScreen.storyboard */,
@@ -161,14 +164,32 @@
 			path = DataBase;
 			sourceTree = "<group>";
 		};
-		6EAB74B121580CDD0001DB51 /* Scennes */ = {
+		6E807D72215C9C87000A62D6 /* Comics */ = {
 			isa = PBXGroup;
 			children = (
 				6E807D63215B61BB000A62D6 /* Detail */,
-				6EAB74B221580CEF0001DB51 /* MoviesViewController.swift */,
-				6EAB74B621580F3D0001DB51 /* MoviesPresenter.swift */,
-				6EAB74B821580F480001DB51 /* MoviesModel.swift */,
+				6EAB74B221580CEF0001DB51 /* ComicsViewController.swift */,
+				6EAB74B621580F3D0001DB51 /* ComicsPresenter.swift */,
+				6EAB74B821580F480001DB51 /* ComicsModel.swift */,
 				6EAB74BC21582D970001DB51 /* CollectionViewCell.swift */,
+			);
+			path = Comics;
+			sourceTree = "<group>";
+		};
+		6E807D73215C9CEF000A62D6 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				6E807D74215C9D0F000A62D6 /* FavoritesViewController.swift */,
+				6E807D76215CAA7B000A62D6 /* FavoritesTableViewCell.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		6EAB74B121580CDD0001DB51 /* Scennes */ = {
+			isa = PBXGroup;
+			children = (
+				6E807D73215C9CEF000A62D6 /* Favorites */,
+				6E807D72215C9C87000A62D6 /* Comics */,
 			);
 			path = Scennes;
 			sourceTree = "<group>";
@@ -177,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				6EF5B9D02158636900E34049 /* Constants.swift */,
+				6E1551B92157DA97007283CC /* AppDelegate.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -370,14 +392,16 @@
 			files = (
 				6E807D65215B6254000A62D6 /* DetailViewController.swift in Sources */,
 				6E1551BA2157DA97007283CC /* AppDelegate.swift in Sources */,
-				6EAB74B921580F480001DB51 /* MoviesModel.swift in Sources */,
+				6E807D75215C9D0F000A62D6 /* FavoritesViewController.swift in Sources */,
+				6EAB74B921580F480001DB51 /* ComicsModel.swift in Sources */,
 				6EAB74BD21582D970001DB51 /* CollectionViewCell.swift in Sources */,
 				6E807D67215C1607000A62D6 /* CellTitle.swift in Sources */,
 				6E807D69215C1C3A000A62D6 /* CellValue.swift in Sources */,
 				6EAB74B521580D7B0001DB51 /* Comics.swift in Sources */,
-				6EAB74B321580CEF0001DB51 /* MoviesViewController.swift in Sources */,
+				6EAB74B321580CEF0001DB51 /* ComicsViewController.swift in Sources */,
 				6E807D71215C3AD1000A62D6 /* ComicsDatabase.swift in Sources */,
-				6EAB74B721580F3D0001DB51 /* MoviesPresenter.swift in Sources */,
+				6E807D77215CAA7B000A62D6 /* FavoritesTableViewCell.swift in Sources */,
+				6EAB74B721580F3D0001DB51 /* ComicsPresenter.swift in Sources */,
 				6EF5B9D12158636900E34049 /* Constants.swift in Sources */,
 				6E807D6D215C1C63000A62D6 /* CellOverview.swift in Sources */,
 				6E807D6B215C1C46000A62D6 /* CellDate.swift in Sources */,

@@ -11,9 +11,9 @@ protocol PresenterDelegate{
     func fetchData(movie: [Comics])
     func requestData()
 }
-class MoviesPresenter {
+class ComicsPresenter {
     var delegate: PresenterDelegate?
-    var model = MoviesModel()
+    var model = ComicsModel()
     var items : [Comics]?
     init(delegate: PresenterDelegate){
         self.delegate = delegate

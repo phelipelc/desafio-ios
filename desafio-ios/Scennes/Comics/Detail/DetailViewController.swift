@@ -37,7 +37,7 @@ extension DetailViewController: UITableViewDataSource{
         if indexPath.row == 0 {
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "cellTitle") as! CellTitle
             cell1.cellDelegate = self
-            if let comm = database.getUser(id: ((movie?.id)!)) as? Bool{
+            if let comm = database.getComics(id: ((movie?.id)!)) as? Bool{
                 if(comm == true ){
                     cell1.btnFavorite.setBackgroundImage(UIImage(named: "favorite_full_icon"), for: .normal)
                 }
@@ -112,16 +112,17 @@ extension DetailViewController: DelegateAction{
     }
         
         database.descript = string
-        if let value = database.getUser(id: database.id) as? Int{
-            if(value == 1){
-                database.updateUser(idComic: database.id, favorite: false)
+        if let value = database.getComics(id: database.id) as? Bool{
+            if(value == true){
+                database.updateComics(idComic: database.id, favorite: false)
                 btn.setBackgroundImage(UIImage(named: "favorite_empty_icon"), for: .normal)
             }else{
-                database.updateUser(idComic: database.id, favorite: true)
+                database.updateComics(idComic: database.id, favorite: true)
                 btn.setBackgroundImage(UIImage(named: "favorite_full_icon"), for: .normal)
             }
         }else{
             database.createComics(comics: database)
+             btn.setBackgroundImage(UIImage(named: "favorite_full_icon"), for: .normal)
         }
         
     }

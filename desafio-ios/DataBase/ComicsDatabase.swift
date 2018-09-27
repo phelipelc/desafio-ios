@@ -21,14 +21,19 @@ class ComicsDatabase: Object {
     @objc dynamic var date: String = ""
     @objc dynamic var isfavorite = true
    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
+    
     func createComics(comics: ComicsDatabase){
         let realm = try! Realm()
         
         try! realm.write {
-            realm.add(comics)
+            realm.create(ComicsDatabase.self, value: comics, update: false
+            )
         }
     }
-    func updateUser(idComic: Int, favorite: Bool) {
+    func updateComics(idComic: Int, favorite: Bool) {
         let realm = try! Realm()
         if realm.objects(ComicsDatabase.self).count > 0 {
             let userRetrieved = realm.object(ofType: ComicsDatabase.self, forPrimaryKey: idComic)
@@ -38,6 +43,26 @@ class ComicsDatabase: Object {
             }
         }
     }
+    
+    func getAll() -> [ComicsDatabase]{
+        let realm = try! Realm()
+        var result = [ComicsDatabase]()
+        if realm.objects(ComicsDatabase.self).count > 0 {
+            let results = realm.objects(ComicsDatabase.self).filter("isfavorite = true").sorted(byKeyPath: "title", ascending: true)
+            for i in 0...results.count-1{
+                var comic = ComicsDatabase()
+                comic.date =  results[i].date
+                comic.descript = results[i].descript
+                comic.id = results[i].id
+                comic.image = results[i].image
+                comic.isfavorite = results[i].isfavorite
+                comic.price = results[i].price
+                comic.title = results[i].title
+                result.append(comic)
+            }
+        }
+        return result
+    }
     func deleteComics() {
         let realm = try! Realm()
         if let usr = realm.objects(ComicsDatabase.self).first {
@@ -46,11 +71,10 @@ class ComicsDatabase: Object {
             }
         }
     }
-    func getUser(id: Int) -> Int? {
+    func getComics(id: Int) -> Bool? {
         let realm = try! Realm()
         if realm.objects(ComicsDatabase.self).count > 0 {
-        let result = realm.objects(ComicsDatabase.self).filter("id == \(id) AND isfavorite == true")
-         return result.count
+            return realm.object(ofType: ComicsDatabase.self, forPrimaryKey: id)?.isfavorite
             
     }
         return nil

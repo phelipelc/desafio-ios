@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import ObjectMapper
-class MoviesModel {
+class ComicsModel {
 
     func getMovies(callback: @escaping (Result<Any>) -> Void){
         
